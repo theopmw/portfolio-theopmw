@@ -1,0 +1,14 @@
+$primary-color: #1e3f66;
+$secondary-color: #fff;
+$accent-color: #000;
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
