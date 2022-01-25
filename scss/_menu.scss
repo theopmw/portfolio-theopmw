@@ -1,6 +1,7 @@
 .menu-btn {
   position: absolute;
-  z-index: 1;
+  margin: 1rem;
+  z-index: 101;
   right: 1rem;
   top: 1rem;
   height: 20px;
@@ -58,8 +59,9 @@
   top: 0;
   left: 0;
   width: 100vw;
-  opacity: 0.98;
+  opacity: 1;
   visibility: hidden;
+  z-index: 100;
 
   &.open {
     visibility: visible;
@@ -84,6 +86,7 @@
 
     &__item {
       transform: translateX(100vw);
+      // position: relative; using to position FA icon behind text
       @include transition-ease;
 
       &.open {
@@ -93,6 +96,10 @@
       &.active > a {
         color: $secondary-color;
       }
+
+      // a i {
+      //   position: absolute;
+      // }
     }
 
     &__link {

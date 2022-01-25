@@ -13,6 +13,12 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/33f71d53d8.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Bootstrap CSS -->
     <!-- <link
       rel="stylesheet"
@@ -27,39 +33,72 @@
     <title>Theo Wright | Software Developer</title>
   </head>
   <body>
-    <header>
-      <!-- Nav menu button -->
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
-      </div>
-
-      <!-- Nav menu -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <nav class="nav">
-              <ul class="menu-nav">
-                <li class="menu-nav__item active">
-                  <a href="index.html" class="menu-nav__link">Home</a>
-                </li>
-                <li class="menu-nav__item">
-                  <a href="about.html" class="menu-nav__link">About Me</a>
-                </li>
-                <li class="menu-nav__item">
-                  <a href="skills.html" class="menu-nav__link">Skills</a>
-                </li>
-                <li class="menu-nav__item">
-                  <a href="projects.html" class="menu-nav__link">Projects</a>
-                </li>
-                <li class="menu-nav__item">
-                  <a href="contact.html" class="menu-nav__link">Contact Me</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <div class="content">
+      <header>
+        <!-- Nav menu button -->
+        <div class="menu-btn">
+          <span class="menu-btn__burger"></span>
         </div>
-      </div>
-    </header>
+  
+        <!-- Nav menu -->
+              <nav class="nav">
+                <ul class="menu-nav">
+                  <li class="menu-nav__item active">
+                    <a href="index.html" class="menu-nav__link"><i class="fas fa-home"></i> Home</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a href="about.html" class="menu-nav__link"><i class="fas fa-info-circle"></i> About Me</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a href="skills.html" class="menu-nav__link"><i class="fas fa-graduation-cap"></i> Skills</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a href="projects.html" class="menu-nav__link"><i class="far fa-object-group"></i> Projects</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a href="contact.html" class="menu-nav__link"><i class="fas fa-envelope"></i> Contact Me</a>
+                  </li>
+                </ul>
+              </nav>
+      </header>
+  
+      <main>
+        <section>
+          <div id="hero" class="hero-wrapper">
+            <div class="cursor"></div>
+  
+            <div class="shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+              <div class="shape shape-3"></div>
+            </div>
+  
+            <div class="hero-content">
+              <h1 class="landing-heading">Hello, my name is Theo!</h1>
+              <p class="landing-subheading">I'm a Full Stack Developer</p>
+            </div>
+          </div>
+        </section>
+    </div>
+    
+
+      <footer class="footer">
+        <div class="social-icons">
+          <a href="https://github.com/theopmw" target="_blank">
+            <i class="fab fa-github-square fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/theowrightlondon/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; Copyright <span id="year"></span>, Theo Wright | All Rights
+            Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
 
     <!-- JQuery CDN -->
     <script
@@ -84,5 +123,6 @@
 
     <script src="static/js/main.js"></script>
     <script src="static/js/nav.js"></script>
+    <script src="static/js/home.js"></script>
   </body>
 </html>

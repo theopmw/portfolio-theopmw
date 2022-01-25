@@ -1,0 +1,79 @@
+.hero-wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  // display: flex;
+  // width: 100%;
+
+  &,
+  * {
+    cursor: none;
+  }
+
+  .cursor {
+    position: fixed;
+    background: #2128bd;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: -5px 0 0 -5px;
+    will-change: transform;
+    user-select: none;
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  .shapes {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    // width: fit-content;
+    background: #2128bd;
+    overflow: hidden;
+
+    .shape {
+      will-change: transform;
+      position: absolute;
+      border-radius: 50%;
+
+      $shapes: (
+        #005ffe: 650px,
+        #e28446: 440px,
+        #1c7cac: 270px,
+      );
+
+      @each $color, $size in $shapes {
+        &.shape-#{index($shapes, ($color $size))} {
+          background: $color;
+          width: $size;
+          height: $size;
+          margin: (-$size/2) 0 0 (-$size/2);
+        }
+      }
+    }
+  }
+  .hero-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    // justify-content: center;
+    // align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    mix-blend-mode: screen;
+
+    .landing-heading {
+      font-size: 10em;
+      font-weight: 900;
+      color: #000;
+      margin: 0;
+    }
+  }
+}
