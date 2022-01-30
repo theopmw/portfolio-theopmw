@@ -176,7 +176,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   position: relative;
-  height: 100%;
+  height: calc(100vh - 67px);
   width: 100%;
 }
 
@@ -247,8 +247,21 @@
   mix-blend-mode: screen;
 }
 
+.hero-wrapper .hero-content .home-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  /* IE */
+  -moz-transform: translateY(-50%);
+  /* Firefox */
+  -webkit-transform: translateY(-50%);
+  /* Safari and Chrome */
+  -o-transform: translateY(-50%);
+}
+
 .hero-wrapper .hero-content .landing-heading {
-  font-size: 10em;
+  font-size: 5rem;
   font-weight: 900;
   color: #000;
   margin: 0;
