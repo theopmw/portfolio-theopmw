@@ -4,7 +4,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   position: relative;
-  height: 100%;
+  height: calc(100vh - 67px);
   width: 100%;
 
   // display: flex;
@@ -69,8 +69,12 @@
     background: #fff;
     mix-blend-mode: screen;
 
+    .home-text {
+      @include v-align;
+    }
+
     .landing-heading {
-      font-size: 10em;
+      font-size: 5rem;
       font-weight: 900;
       color: #000;
       margin: 0;
