@@ -41,6 +41,18 @@ body {
   flex: 1 0 auto;
 }
 
+// General headings & text
+
+.page-heading {
+  margin: 0.8rem 0 0 0;
+  font-size: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  color: $primary-color;
+}
+
 footer {
   flex-shrink: 0;
   margin: 0 auto;
@@ -59,5 +71,10 @@ footer {
         color: black;
       }
     }
+  }
+
+  .copyright {
+    margin: 0.5rem;
+    font-size: 0.8rem;
   }
 }
