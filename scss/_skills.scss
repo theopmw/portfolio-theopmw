@@ -1,4 +1,36 @@
 #languages {
+  .subheading {
+    text-align: center;
+    margin: 1rem;
+    // background: $primary-color;
+    // height: 100px;
+    // width: 100px;
+    // border-radius: 50%;
+  }
+  .languages-container {
+    // display: flex;
+    // justify-content: center;
+    ul {
+      text-align: center;
+      display: grid;
+      width: 100%;
+      // justify-content: space-around;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, 144px);
+      list-style-type: none;
+    }
+  }
+}
+
+#frameworks {
+  .subheading {
+    text-align: center;
+    margin: 1rem;
+    // background: $primary-color;
+    // height: 100px;
+    // width: 100px;
+    // border-radius: 50%;
+  }
   .languages-container {
     ul {
       text-align: center;

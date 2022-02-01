@@ -267,7 +267,30 @@
   color: #000;
 }
 
+#languages .subheading {
+  text-align: center;
+  margin: 1rem;
+}
+
 #languages .languages-container ul {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (144px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 144px);
+  list-style-type: none;
+}
+
+#frameworks .subheading {
+  text-align: center;
+  margin: 1rem;
+}
+
+#frameworks .languages-container ul {
   text-align: center;
   display: -ms-grid;
   display: grid;
