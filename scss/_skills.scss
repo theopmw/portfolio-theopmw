@@ -1,0 +1,13 @@
+#languages {
+  .languages-container {
+    ul {
+      text-align: center;
+      display: grid;
+      width: 100%;
+      // justify-content: space-around;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, 144px);
+      list-style-type: none;
+    }
+  }
+}
